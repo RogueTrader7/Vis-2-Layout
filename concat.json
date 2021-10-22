@@ -16,7 +16,7 @@
          "as": "text_annotation"
          }],
 
-        "vconcat": [
+        "hconcat": [
             {
             "width": "350",
             "height": "100",
