@@ -21,37 +21,7 @@
             "name": "Range of proportion: "
             
           }
-        },
- {
- "name": "State_selection",
- "bind": {
- "input": "select",
- "options": [
- null,
- "NSW",
- "Vic",
- "Qld",
- "SA",
- "WA",
- "Tas",
- "NT",
- "ACT"
- ],
- "labels":[
- "Show All",
- "NSW",
- "Vic",
- "Qld",
- "SA",
- "WA",
- "Tas",
- "NT",
- "ACT"
- ],
- 
- "name": "State Selection: "
- }
- }
+        }
  ],
  "transform": [
      {"filter": "datum.people > 0"},
