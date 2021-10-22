@@ -1,0 +1,14 @@
+﻿Death_Cause,males,females,total,proportion
+Ischaemic heart diseases,"2,538","1,636","4,174",18.4404683
+Malignant neoplasms of digestive organs,"2,132","1,526","3,658",16.1608129
+Other heart disease,"1,085","1,321","2,406",10.629556
+Cerebrovascular diseases,945,"1,399","2,344",10.35564391
+Mental disorders,795,"1,467","2,262",9.993373095
+Malignant neoplasms of respiratory organs,"1,161",910,"2,071",9.149547161
+Chronic lower respiratory diseases,845,758,"1,603",7.081952728
+Diseases of the nervous system,572,966,"1,538",6.794786835
+Falls,641,650,"1,291",5.703556439
+Diabetes mellitus,691,597,"1,288",5.690302629
+total causes,"11,405","11,230","22,635",100
+,,,,
+TotVic_deaths,"21,141","19,952","41,093",proportion

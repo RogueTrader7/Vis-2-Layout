@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f3fafa",
+    "width": "400",
+    "height": "200",
+    "view": {"fill": "#EBF7F7"},
+    "align": "centre",
+    "title": {"text": "Fitness by State(2019)", "anchor":"start","font": "Lato","color": "gray",  "fontSize": 20},
+    "config": {"legend": {"titleFont": "Lato"}},
+    "projection":{"type": "equirectangular"},
+    "data":{
+        "url": "https://raw.githubusercontent.com/RogueTrader7/3179-Vis/8261970f5562a20d1d7ae8fd7ec052729a0ef97a/STE11aAust.topojson",
+          "format":{"type":"topojson", "feature": "STE11aAust"}
+    },
+
+    "transform": [
+        {
+            "lookup": "properties.STATE_NAME",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/RogueTrader7/Visulaisation2/main/Physical%20summary_%20by%20region.csv"
+        },
+            "key": "State",
+            "fields": ["2019"]
+      }
+        }
+    ],
+    "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 1},
+    "encoding": {
+        "color":{
+            "field":"2019",
+            "type": "quantitative",
+            "sort": "ascending",
+            "scale": {
+                "domain":[40,50],
+                "range": ["#abd9e9","#4393c3","#2166ac"
+                  ]}
+            },
+            "tooltip":[{"field": "properties.STATE_NAME", "type": "nominal", "title":"State"},
+                {"field": "2019", "type": "quantitative", "title":"Percentage proportion"}]
+        }
+    }
